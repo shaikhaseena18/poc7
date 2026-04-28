@@ -1,6 +1,7 @@
 ---
 - hosts: dockerhost
-  become: true
+  become: false
+  gather_facts: false
   tasks:
     - name: Remove existing container
       shell: docker rm -f poc7 || true
