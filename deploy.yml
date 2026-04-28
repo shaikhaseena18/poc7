@@ -8,4 +8,3 @@
 
     - name: Run new container
       shell: docker run -d -p 8080:8080 --name poc7 shaikhaseena/poc7-app:latest
-``
