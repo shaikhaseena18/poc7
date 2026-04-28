@@ -1,0 +1,9 @@
+---
+- hosts: dockerhost
+  become: true
+  tasks:
+    - name: Remove existing container
+      shell: docker rm -f poc7 || true
+
+    - name: Run new container
+      shell: docker run -d --name poc7 poc7-app
