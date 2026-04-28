@@ -7,4 +7,5 @@
       shell: docker rm -f poc7 || true
 
     - name: Run new container
-      shell: docker run -d --name poc7 poc7-app
+      shell: docker run -d -p 8080:8080 --name poc7 shaikhaseena/poc7-app:latest
+``
